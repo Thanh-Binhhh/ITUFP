@@ -2,9 +2,9 @@
 
 Khai thác Top-K các mẫu tiện ích cao từ dữ liệu không chắc chắn (Top-K High-Utility Pattern Mining from Uncertain Data) là một lĩnh vực quan trọng trong khai thác dữ liệu.
 
-Sự xuất hiện của thuật toán TUFP đã hỗ trợ việc khai thác tĩnh Top-K. Tuy nhiên, trong thực tế thì người dùng cần thường xuyên điều chỉnh ngưỡng k để phù hợp với yêu cầu của ứng dụng. Trong môi trường tương tác, việc sử dụng thuật toán TUFP đòi hỏi phải quét lại cơ sở dữ liệu nhiều lần, gây lãng phí thời gian và tài nguyên.
+Sự xuất hiện của thuật toán TUFP đã hỗ trợ việc khai thác tĩnh Top-K. Tuy nhiên, trong thực tế thì người dùng cần thường xuyên điều chỉnh ngưỡng k để phù hợp với yêu cầu của ứng dụng. Trong môi trường tương tác, việc sử dụng thuật toán TUFP đòi hỏi phải quét lại cơ sở dữ liệu nhiều lần.
 
-Để khắc phục hạn chế này, phương pháp `ITUFP` đã được đề xuất để khai thác các UFP Top-K trong môi trường tương tác, tuân theo nguyên tắc **xây dựng một lần, khai thác nhiều lần**.
+Để khắc phục hạn chế này, phương pháp `ITUFP` (Interactive Top-K Uncertain Frequent Pattern mining algorithm) đã được đề xuất để khai thác các UFP Top-K trong môi trường tương tác, tuân theo nguyên tắc **xây dựng một lần, khai thác nhiều lần**.
 
 ## Cấu trúc dự án
 
@@ -13,7 +13,7 @@ Sự xuất hiện của thuật toán TUFP đã hỗ trợ việc khai thác t�
 ├── data/                   // Chứa dữ liệu đầu vào
 │   ├── example.txt         // Dữ liệu kiểm thử
 │   └── foodmart.txt        // Dữ liệu chính thức
-├── output/                 // Chứa kết quả Top-K UDP theo ngưỡng k tương ứng
+├── output/                 // Chứa kết quả Top-K UFP theo ngưỡng k tương ứng
 │   ├── example.txt
 │   └── foodmart.txt
 ├── papers/                 // Tài liệu tham khảo
